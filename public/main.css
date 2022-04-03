@@ -1,0 +1,58 @@
+html {
+padding: 0;
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  border-left: 1.5vw solid #008c5f;
+  font-size: 1.5em;
+    overflow-x: hidden;
+}
+
+#main {
+  padding-top: 5vh;
+  margin-left: 3vw;
+}
+
+#companyName {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#main > ul > li {
+  color: #00b78c;
+}
+
+#foot {
+  background-color: yellow;
+  height: 50vh;
+  /* width: 100%; */
+  margin-top: 65vh;
+  text-align: center;
+}
+
+#sym {
+  font-size: 10em;
+    animation:spin 200s linear infinite;
+}
+
+#povi {
+  padding-bottom: 2vh;
+  font-weight: bold;
+}
+
+#secondMain {
+  font-size: 50em;
+  text-align: center;
+  margin-top: 15vh;
+      color: red;
+    position: fixed;
+    top: -10vh;
+    left: -50vw;
+    z-index: -1;
+    animation:spin 200s linear infinite;
+    overflow: hidden;
+}
+ 
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
