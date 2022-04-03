@@ -44,15 +44,13 @@ body {
 
 #secondMain {
   font-size: 50em;
-  text-align: center;
-  margin-top: 15vh;
-      color: red;
-    position: fixed;
-    top: -10vh;
-    left: -50vw;
-    z-index: -1;
-    animation:spin 200s linear infinite;
-    overflow: hidden;
+  color: red;
+  position: fixed;
+  top: 10vh;
+  right: 49vw;
+  z-index: -1;
+  animation:spin 200s linear infinite;
+  overflow: hidden;
 }
  
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
