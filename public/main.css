@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  border-left: 1.5vw dashed #008c5f;
+  border-left: 1.5vw solid #a7c938;
   font-size: 1.5em;
   overflow-x: hidden;
   overflow-y: initial;
@@ -67,3 +67,10 @@ body {
   }
 }
 
+#fly {
+  position: fixed;
+    /* color: #1bf4a780; */
+    font-size: 3em;
+    bottom: 0;
+    right: 1vw;
+}
