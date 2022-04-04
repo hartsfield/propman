@@ -71,6 +71,6 @@ body {
   position: fixed;
     /* color: #1bf4a780; */
     font-size: 3em;
-    bottom: 0;
-    right: 1vw;
+    bottom: 2vw;
+    right: 2vw;
 }
