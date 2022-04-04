@@ -1,13 +1,15 @@
 html {
-padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  /* overflow: auto; */
 }
 
 body {
   margin: 0;
   border-left: 1.5vw solid #008c5f;
   font-size: 1.5em;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  overflow-y: initial;
 }
 
 #main {
@@ -21,7 +23,7 @@ body {
 }
 
 #main > ul > li {
-  color: #00b78c;
+  color: #009cb2;
 }
 
 #foot {
@@ -30,6 +32,7 @@ body {
   /* width: 100%; */
   margin-top: 65vh;
   text-align: center;
+    overflow: hidden;
 }
 
 #sym {
@@ -43,14 +46,22 @@ body {
 }
 
 #secondMain {
-  font-size: 50em;
-  color: red;
+  font-size: 70em;
   position: fixed;
   top: 10vh;
-  right: 49vw;
-  z-index: -1;
+  right: 15vw;
+  /* overflow: hidden; */
+  /* display: inline; */
+  /* text-align: center; */
   animation:spin 200s linear infinite;
-  overflow: hidden;
+  z-index: -1;
+  color: #ff00009e;
 }
  
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@media screen and (orientation:portrait) {
+  body {
+    font-size: 1.7em;
+  }
+}
+
