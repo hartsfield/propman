@@ -12,6 +12,19 @@ body {
   overflow-y: initial;
 }
 
+#hamburger > ul {
+  list-style-type: none;
+      position: fixed;
+    right: 1em;
+    top: 0;
+    width: 3em;
+}
+
+#hamburger > ul > li {
+  border-bottom: 0.5em solid black;
+  height: 0.5em;
+}
+
 #main {
   padding-top: 5vh;
   margin-left: 3vw;
