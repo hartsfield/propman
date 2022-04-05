@@ -26,9 +26,10 @@ body {
 }
 
 #main {
-  padding-top: 5vh;
+  padding-top: 7vh;
   margin-left: 3vw;
   font-size: 1.5em;
+  margin-right: 3vh;
 }
 
 #companyName {
@@ -72,14 +73,6 @@ body {
   z-index: -1;
   color: #ff00009e;
 }
- 
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-@media screen and (orientation:portrait) {
-  body {
-    font-size: 1.7em;
-  }
-}
-
 #fly {
   position: fixed;
     /* color: #1bf4a780; */
@@ -87,3 +80,14 @@ body {
     bottom: 2vw;
     right: 2vw;
 }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@media screen and (orientation:portrait) {
+  body {
+    font-size: 1.7em;
+  }
+  #fly {
+    font-size: 5em;
+  }
+}
+
+
