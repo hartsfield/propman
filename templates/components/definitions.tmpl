@@ -10,9 +10,9 @@
     </head>
 {{end}}
 
-{{define "homePage"}}
-
-  <div id="hamburger">
+{{define "hamburger"}}
+ 
+  <div id="hamburger" onclick="showNav()">
     <ul>
       <li></li>
       <li></li>
@@ -20,6 +20,19 @@
     </ul>
   </div>
 
+  <div id="menu">
+    <div id="closeMenu" onclick="closeNav()">X</div>
+    <ul>
+      <li><a href="/inspection">Inspection Guidelines</a></li>
+      <li><a href="/services">Property Services</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="/schedule">Schedule Services</a></li>
+    </ul>
+  </div>
+
+{{end}}
+
+{{define "homePage"}}
   <div id="main">
     <div id="companyName">Reliable Property Management</div>
     <ul>
@@ -35,18 +48,86 @@
    <i>(681) - 222 - 5982 </i>
   </div>
 
-  <div id="fly">
-     &#9829;
-  </div>
-
   <div id="secondMain">
     &#10049; 
   </div>
+{{end}}
+
+{{define "likeButton" }}
+  <div id="fly" onclick="heart()">
+     &#9829;
+  </div>
+
+  <div id="popupLike">
+    Like us on Facebook
+  </div>
+
 {{end}}
 
 {{define "footer"}}
   <div id="foot">
     <div id="sym">☯</div>
     <div id="povi">POSITIVE VIBES 4 EVER</div>
+  </div>
+{{end}}
+
+{{define "inspection"}}
+  <div id="inspectionMain">
+    This is a sample of our multi-point inpsection checklist. Actual inspection 
+    may vary depending on which package best fits your needs.
+  </div>
+  <div>
+    <ul>
+      <li>Door Locks</li>
+      <li>Window Locks</li>
+      <li>Signs of Forced Entry</li>
+      <li>Looting</li>
+      <li>Storm Damage</li>
+      <li>Rodents and Pests</li>
+      <li>Plumbing Issues</li>
+      <li>Electrical Issues</li>
+      <li>Insulation Issues</li>
+      <li>Paint Degradation</li>
+      <li>Vinyl Siding Up-Keep</li>
+      <li>Window Up-Keep</li>
+      <li>Roof</li>
+      <li>Gutters</li>
+      <li>Hedges</li>
+      <li>Mulch</li>
+      <li>Ornamental Plants</li>
+      <li>Foundation</li>
+      <li>Odd Smells</li>
+      <li>Fences</li>
+      <li>Landscape</li>
+      <li>Mail</li>
+      <li>Taxes</li>
+      <li>Utilities</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
 {{end}}

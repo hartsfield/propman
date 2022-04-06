@@ -80,6 +80,49 @@ body {
     bottom: 2vw;
     right: 2vw;
 }
+
+#popupLike {
+  position: fixed;
+  width: 100%;
+  background-color: #ff0000b0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  font-size: 4em;
+  height: 20vh;
+  color: white;
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  background-color: #00ccff;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  font-size: 4em;
+  color: white;
+  z-index: 10000;
+}
+
+#menu > ul {
+  list-style-type: none;
+}
+
+#menu > ul > li:hover {
+  cursor: pointer;
+}
+
+#menu > ul > li {
+  padding-top: 5vh;
+}
+
+#closeMenu {
+  float: right;
+  margin: 2vw;
+  font-family: sans-serif;
+}
+
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @media screen and (orientation:portrait) {
   body {
