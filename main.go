@@ -9,6 +9,7 @@ import (
 
 var homeTemplate *template.Template
 var inspectionTemplate *template.Template
+var servicesTemplate *template.Template
 
 type ViewData struct {
 	Name string
@@ -24,10 +25,15 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	servicesTemplate, err = template.ParseFiles("templates/services.tmpl", "templates/components/definitions.tmpl")
+	if err != nil {
+		panic(err)
+	}
 
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
 	http.HandleFunc("/", home)
 	http.HandleFunc("/inspection", inspection)
+	http.HandleFunc("/services", services)
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "3000"
@@ -50,6 +56,16 @@ func home(w http.ResponseWriter, r *http.Request) {
 func inspection(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	err := inspectionTemplate.Execute(w, ViewData{
+		Name: "GULF",
+	})
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+func services(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	err := servicesTemplate.Execute(w, ViewData{
 		Name: "GULF",
 	})
 	if err != nil {
