@@ -179,6 +179,10 @@ body {
   .fern > img {
     height: 45vh;
   }
+
+  .house > img {
+    height: 25vh;
+  }
 }
 
 
