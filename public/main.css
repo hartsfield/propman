@@ -177,7 +177,8 @@ body {
 #contactMain {
   height: 100%;
   text-align: center;
-  padding-top: 15vh;
+  padding: 1em;
+  padding-top: 10vh;
   font-size: 5em;
 }
 
@@ -189,11 +190,16 @@ body {
   margin-top: 1em;
   border-radius: 0.1em;
   font-size: 0.5em;
+  display: block;
 }
 
 @media screen and (orientation:landscape) {
   #contactMobile {
     display: none;
+  }
+
+  #contactDesktop {
+    font-weight: bold;
   }
 }
 
