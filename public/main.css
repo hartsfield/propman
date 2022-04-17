@@ -183,7 +183,7 @@ body {
   font-size: 5em;
 }
 
-#textButt {
+.textButt {
   padding: 0.2em;
   color: white;
   background-color: green;
@@ -192,10 +192,6 @@ body {
   border-radius: 0.1em;
   font-size: 0.5em;
   display: block;
-}
-
-.contactHome > a {
-  display: inline;
 }
 
 @media screen and (orientation:landscape) {
@@ -214,6 +210,7 @@ body {
   body {
     font-size: 1.7em;
   }
+
   #fly {
     font-size: 5em;
   }
@@ -229,9 +226,15 @@ body {
   #menu {
     font-size: 4em;
   }
+
   #contactDesktop {
     display: none;
   }
+
+  .contactHome > a {
+    display: inline;
+  }
+
 }
 
 
