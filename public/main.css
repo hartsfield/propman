@@ -242,6 +242,10 @@ body {
   .contactMainDesktop {
     display: none;
   }
+
+  .chbutt {
+    font-size: 2em;
+  }
 }
 
 
