@@ -73,6 +73,7 @@ body {
   z-index: -1;
   color: #ff00009e;
 }
+
 #fly {
   position: fixed;
     /* color: #1bf4a780; */
@@ -121,6 +122,27 @@ body {
   float: right;
   margin: 2vw;
   font-family: sans-serif;
+}
+
+#servicesMain {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.topText {
+  font-size: 2em;
+  font-weight: bold;
+  padding-right: 3em;
+}
+
+#fern {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#fern > img {
+  height: 75vh;
 }
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
