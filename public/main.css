@@ -101,7 +101,6 @@ body {
   top: 0;
   right: 0;
   visibility: hidden;
-  font-size: 4em;
   color: black;
   z-index: 10000;
   font-family: sans-serif;
@@ -146,6 +145,10 @@ body {
   padding-left: 2em;
 }
 
+#inspectionMain > div > ul {
+  list-style-type: 
+}
+
 .topText {
   font-size: 2em;
   font-weight: bold;
@@ -182,6 +185,10 @@ body {
 
   .house > img {
     height: 25vh;
+  }
+
+  #menu {
+    font-size: 4em;
   }
 }
 
