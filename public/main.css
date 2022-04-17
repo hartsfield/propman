@@ -153,6 +153,10 @@ body {
   #fly {
     font-size: 5em;
   }
+
+  #fern > img {
+    height: 45vh;
+  }
 }
 
 
