@@ -194,6 +194,10 @@ body {
   display: block;
 }
 
+.contactHome > a {
+  display: inline;
+}
+
 @media screen and (orientation:landscape) {
   #contactMobile {
     display: none;
@@ -203,6 +207,7 @@ body {
     font-weight: bold;
   }
 }
+
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @media screen and (orientation:portrait) {
