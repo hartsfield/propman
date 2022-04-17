@@ -170,6 +170,27 @@ body {
   height: 40vh;
 }
 
+.palm {
+  bottom: -3vh;
+}
+
+#contactMain {
+  height: 100%;
+  text-align: center;
+  padding-top: 15vh;
+  font-size: 5em;
+}
+
+#textButt {
+  padding: 0.2em;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  margin-top: 1em;
+  border-radius: 0.1em;
+  font-size: 0.5em;
+}
+
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 @media screen and (orientation:portrait) {
   body {
